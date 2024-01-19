@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: rgb(181, 163, 163);
+    font-family: 'Fira Sans', sans-serif;
+    height: 200vh;
+}
+
+.sidebar nav {
+    padding: 10px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 25px;
+    padding: 25px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgb(50, 41, 41);
+}
+
+.devInfo {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    margin: -250px 0px -100px 10px; /* Add margin auto to center the devInfo horizontally */
+    margin: -27px 18px -177px;
+}
+
+
+.main {
+    width: 90vw;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    height: 60vh;
+    width: 75vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around; /* Remove the duplicate line */
+    flex-wrap: wrap;
+}
+
+.devInfo {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.devPic {
+    width: 40%;
+    margin-top: -150px;
+}
+
+.devPic img {
+    max-width: 70%;
+    height: auto;
+    padding: 0px 0px 100px 500px;
+}
+
+.hello {
+    font-size: 40px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.buttons {
+    padding: 7px;
+    margin-top: 20px;
+}
+
+.btn {
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    border-radius: 20px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    padding: 9px 14px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.btn-sm {
+    font-size: 10px;
+    padding: 5px 5px 5px 5px;
+    margin: 10px;
+}
+
+.btn:hover {
+    color: dodgerblue;
+    background-color: white;
+}
+
+.moreabout {
+    font-size: 15px;
+    margin-top: 23px;
+    width: 600px;
+}
+
+.contactForm {
+    padding: 34px;
+    font-family: 'Fira Sans', sans-serif;
+    padding-top: 85px;
+}
+
+.contactForm h1 {
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0;
+}
+
+.contactForm form div {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm form div input {
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0;
+    padding: 3px;
+}
+
+.form-control {
+    width: 400px;
+}
+
+#emailHelp {
+    font-size: 15px;
+    color: rgb(44, 28, 125);
+    margin: 0 10px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+.form-check-input {
+    width: 20px;
+}
+
+#isclient.form-check-input {
+    width: 15px;
+    margin: 4px;
+}
+
+label.form-check-label {
+    padding: 10px;
+}
+
+.blogitem {
+    margin: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 23px;
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.intro h2 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px 12px;
+}
+
+.intro p {
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px 12px;
+}
+
+.skill {
+    width: 23px;
+    height: 23px;
+}
+
+.skillItems {
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    font-weight: bolder;
+}
+
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-200px); /* Move the sidebar off-screen by default */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px; /* Adjust the width of the sidebar as needed */
+    background-color: rgb(181, 163, 163);
+    font-family: 'Fira Sans', sans-serif;
+    height: 200vh;
+}
+
+.sidebar nav {
+    padding: 10px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 25px;
+    padding: 25px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgb(50, 41, 41);
+}
+
+.ham {
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross {
+    display: none; /* Initially hide the cross icon */
+}
+
+/* Show the cross icon when the sidebar is open */
+.sidebar.open .cross {
+    display: block;
+}
+
+/* Hide the ham icon when the sidebar is open */
+.sidebar.open .ham {
+    display: none;
+}
+.ham, .cross {
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross {
+    display: none; /* Initially hide the cross icon */
+}
+
+/* Show the cross icon when the sidebar is open */
+.sidebar.open .cross {
+    display: block;
+}
+
+/* Hide the ham icon when the sidebar is open */
+.sidebar.open .ham {
+    display: none;
+}
+
+@media (max-width: 1278px) {
+    .sidebar {
+        transform: translateX(-200px); /* Move the sidebar off-screen by default */
+    }
+
+    .ham {
+        display: block; /* Display the hamburger icon */
+    }
+
+    .cross {
+        display: none; /* Initially hide the cross icon */
+    }
+
+    .sidebar.open {
+        transform: translateX(0); /* Adjust the translation to match the sidebar width */
+    }
+}
